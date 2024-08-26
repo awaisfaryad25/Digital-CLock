@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height: auto;
+
+}
+h1{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+h1 .word1, .sc{
+  color: #ff4500;
+}
+h1 .word2, .mns{
+  color: #24ff24;
+}
+.hr{
+  color: #ffd700;
+}
+.hero{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #130329;
+  color: lightseagreen;
+}
+.box{
+}
+
+.clock{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 350px;
+  padding: 2.5rem 3.3rem ;
+  box-sizing: border-box;
+  position: relative;
+}
+.clock::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem; 
+  padding: 2.5px; 
+  background: linear-gradient(to right, #24ff24, #ff01ff, #ffd700, #ff4500);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; 
+  mask-composite: exclude; 
+}
+
+.time{
+  font-size: 2.5rem;
+}
+.colon{
+  font-size: 2.6rem;
+}
+.title{
+  font-size: 0.5rem;
+  text-align: center;
+}
+span{
+  display: block;
+}
+.period {
+  font-size: 0.7rem;
+  display: inline;
+}
+
+@media (min-width: 767px){
+  
+}
